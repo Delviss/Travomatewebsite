@@ -18,40 +18,6 @@ if (toggle && links) {
   });
 }
 
-// Quote form: estimate fare based on weight + a route multiplier
-const quoteForm = document.getElementById('quote');
-if (quoteForm) {
-  quoteForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const from = document.getElementById('from').value.trim();
-    const to = document.getElementById('to').value.trim();
-    const weight = parseFloat(document.getElementById('weight').value) || 0;
-    const result = document.getElementById('quote-result');
-    if (!from || !to || weight <= 0) {
-      result.textContent = 'Please fill in all fields to get an estimate.';
-      return;
-    }
-    const sameCity = from.toLowerCase().split(',')[0] === to.toLowerCase().split(',')[0];
-    const base = sameCity ? 6 : 19;
-    const perKg = sameCity ? 1.2 : 3.5;
-    const estimate = Math.round(base + weight * perKg);
-    result.textContent = `Estimated $${estimate} for ${weight}kg from ${from} to ${to}. We've sent a copy to your inbox.`;
-  });
-}
-
-// Track form
-const trackForm = document.querySelector('.track-form');
-if (trackForm) {
-  trackForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const id = document.getElementById('tracking').value.trim();
-    const status = document.getElementById('track-status');
-    status.textContent = id
-      ? `Parcel ${id} is in transit. ETA tomorrow 18:00.`
-      : 'Enter a tracking number to see live status.';
-  });
-}
-
 // Reveal-on-scroll
 const revealEls = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && revealEls.length) {
