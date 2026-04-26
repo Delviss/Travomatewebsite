@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0b0f1a" />
-  <meta name="description" content="Travomate Parcels — fast, reliable, and affordable parcel delivery across cities and borders." />
-  <title>Travomate Parcels — Send Smart. Deliver Fast.</title>
+  <meta name="description" content="Travomate Parcels — send packages with travellers already heading your way. Faster, cheaper, more flexible. Download the app." />
+  <title>Travomate Parcels — Send With Travellers. Save Big.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -25,15 +25,13 @@
         <span class="logo-text">Travomate <span>Parcels</span></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#services">Services</a>
         <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
+        <a href="#why">Why Travomate</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a href="#download">Download</a>
       </nav>
       <div class="nav-cta">
-        <a href="#track" class="btn btn-ghost">Track parcel</a>
-        <a href="#quote" class="btn btn-primary">Get a quote <span class="arrow">→</span></a>
+        <a href="#download" class="btn btn-primary">Get the app <span class="arrow">→</span></a>
       </div>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -45,52 +43,48 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow"><span class="pulse"></span> Send Smart · Deliver Fast</span>
-          <h1>Parcel delivery that moves at the <span class="grad">speed of your business</span>.</h1>
+          <span class="eyebrow"><span class="pulse"></span> Parcels · Powered by travellers</span>
+          <h1>Your parcel. Their journey. <span class="grad">One smart app.</span></h1>
           <p class="lead">
-            Travomate Parcels connects senders with vetted travelers and couriers,
-            so your packages reach their destination faster, safer, and at a
-            fraction of the cost.
+            Travomate Parcels connects you with travellers already heading to your destination —
+            so your package arrives faster, cheaper, and with someone you can trust.
+            Skip the courier. Catch a ride.
           </p>
-          <form id="quote" class="quote-form">
-            <div class="field">
-              <label for="from">From</label>
-              <input id="from" name="from" type="text" placeholder="Lagos, NG" required />
-            </div>
-            <div class="field">
-              <label for="to">To</label>
-              <input id="to" name="to" type="text" placeholder="London, UK" required />
-            </div>
-            <div class="field">
-              <label for="weight">Weight (kg)</label>
-              <input id="weight" name="weight" type="number" min="0.1" step="0.1" placeholder="2.5" required />
-            </div>
-            <button class="btn btn-primary" type="submit">Get instant quote</button>
-            <p id="quote-result" class="quote-result" role="status" aria-live="polite"></p>
-          </form>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary btn-lg">Download the app <span class="arrow">→</span></a>
+            <a href="#how" class="btn btn-ghost btn-lg">See how it works</a>
+          </div>
+
+          <ul class="hero-bullets">
+            <li><span class="tick" aria-hidden="true">✓</span> Verified travellers, real ratings</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Secure payments, released on delivery</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Optional insurance for peace of mind</li>
+          </ul>
+
           <div class="trust">
-            <div><strong>50k+</strong><span>parcels delivered</span></div>
-            <div><strong>120+</strong><span>cities covered</span></div>
-            <div><strong>4.9 ★</strong><span>customer rating</span></div>
+            <div><strong>Faster</strong><span>than waiting on couriers</span></div>
+            <div><strong>Cheaper</strong><span>no warehouses, no chains</span></div>
+            <div><strong>Trusted</strong><span>verified IDs &amp; reviews</span></div>
           </div>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="card card-float">
             <div class="card-row">
               <div class="dot dot-green"></div>
-              <span>In transit</span>
-              <span class="badge">#TM-48201</span>
+              <span>Match found</span>
+              <span class="badge">Verified ★ 4.9</span>
             </div>
             <div class="route">
-              <div class="route-point"><span></span><p>Lagos hub</p><small>Picked up · 09:14</small></div>
+              <div class="route-point"><span></span><p>Your parcel</p><small>Lagos · ready today</small></div>
               <div class="route-line"></div>
-              <div class="route-point"><span></span><p>Heathrow</p><small>ETA · Tomorrow 18:00</small></div>
+              <div class="route-point"><span></span><p>Traveller heading there</p><small>Arrives London tomorrow</small></div>
             </div>
           </div>
           <div class="card card-float card-2">
-            <p class="card-title">On-time delivery</p>
-            <div class="bar"><div class="bar-fill" style="width:96%"></div></div>
-            <small>96% across last 30 days</small>
+            <p class="card-title">Funds held securely</p>
+            <div class="bar"><div class="bar-fill" style="width:100%"></div></div>
+            <small>Released after successful delivery</small>
           </div>
           <div class="blob blob-1"></div>
           <div class="blob blob-2"></div>
@@ -101,194 +95,143 @@
 
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>Same-day city delivery</span>
-        <span>International couriers</span>
-        <span>Real-time tracking</span>
-        <span>ID-verified travelers</span>
-        <span>Insurance up to $2,000</span>
-        <span>API for e-commerce</span>
-        <span>24/7 human support</span>
-        <span>Same-day city delivery</span>
-        <span>International couriers</span>
-        <span>Real-time tracking</span>
-        <span>ID-verified travelers</span>
-        <span>Insurance up to $2,000</span>
-        <span>API for e-commerce</span>
-        <span>24/7 human support</span>
+        <span>Send with travellers</span>
+        <span>Save on courier fees</span>
+        <span>Verified IDs &amp; ratings</span>
+        <span>Secure escrow payments</span>
+        <span>Optional insurance</span>
+        <span>Track every step</span>
+        <span>Customs-clear &amp; legal</span>
+        <span>Send with travellers</span>
+        <span>Save on courier fees</span>
+        <span>Verified IDs &amp; ratings</span>
+        <span>Secure escrow payments</span>
+        <span>Optional insurance</span>
+        <span>Track every step</span>
+        <span>Customs-clear &amp; legal</span>
       </div>
     </div>
-
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">What we deliver</span>
-          <h2>One platform for <span class="grad">every kind of parcel</span></h2>
-          <p>From documents to oversized luggage, Travomate matches your shipment with the right courier — every time.</p>
-        </div>
-        <div class="services-bento">
-          <article class="feature b-large reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
-            </div>
-            <h3>Same-day city delivery</h3>
-            <p>Door-to-door pickup and drop within hours, tracked end-to-end inside one app. Perfect for urgent documents, gifts, and last-mile e-commerce.</p>
-          </article>
-          <article class="feature b-med reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20"/><path d="M12 2a15 15 0 0 0 0 20"/></svg>
-            </div>
-            <h3>International shipping</h3>
-            <p>Travelers and partner carriers move your parcels across borders with full customs support and live waypoints.</p>
-          </article>
-          <article class="feature b-small reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13l5 5v5h-3"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
-            </div>
-            <h3>Bulk &amp; e-commerce</h3>
-            <p>Volume rates, API integration, and dedicated dispatchers for online stores and SMEs.</p>
-          </article>
-          <article class="feature b-small reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3>Insured &amp; verified</h3>
-            <p>Every traveler is ID-verified. Every parcel is insured up to its declared value.</p>
-          </article>
-          <article class="feature b-small reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <h3>Real-time tracking</h3>
-            <p>Live updates from pickup to delivery, with photo proof and signature on completion.</p>
-          </article>
-          <article class="feature b-small reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-7.6-4.7L3 21l1.7-1.9A8.5 8.5 0 1 1 21 11.5z"/></svg>
-            </div>
-            <h3>24/7 support</h3>
-            <p>Real humans on chat, phone, and WhatsApp — wherever your parcel is.</p>
-          </article>
-        </div>
-      </div>
-    </section>
 
     <section id="how" class="how">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">How it works</span>
-          <h2>Three simple steps from <span class="grad">sender to receiver</span></h2>
+          <h2>Five steps from <span class="grad">post to delivered</span></h2>
+          <p>No warehouses. No middlemen. Just real journeys, shared.</p>
         </div>
-        <ol class="steps">
+        <ol class="steps steps-5">
           <li class="reveal">
             <span class="step-num">01</span>
-            <h3>Request a pickup</h3>
-            <p>Tell us where, when, and what. Get matched with a courier in under 2 minutes.</p>
+            <h3>Post your parcel</h3>
+            <p>Add the destination, size, and a few details. It takes a minute.</p>
           </li>
           <li class="reveal">
             <span class="step-num">02</span>
-            <h3>We pick &amp; pack</h3>
-            <p>Your parcel is collected, scanned, and sealed at the door. You watch it move in real time.</p>
+            <h3>Get traveller offers</h3>
+            <p>Verified travellers heading your way send you offers in the app.</p>
           </li>
           <li class="reveal">
             <span class="step-num">03</span>
-            <h3>Delivered, signed, done</h3>
-            <p>The recipient signs digitally. You get photo proof and a receipt — instantly.</p>
+            <h3>Choose your match</h3>
+            <p>Compare ratings, price, and timing. Pick the one that fits.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num">04</span>
+            <h3>Pay securely</h3>
+            <p>Funds are held in the app and only released after delivery.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num">05</span>
+            <h3>Track &amp; confirm</h3>
+            <p>Follow the journey, then confirm delivery. Done.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <section id="pricing" class="pricing">
+    <section id="why" class="services">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Pricing</span>
-          <h2>Transparent rates. <span class="grad">No hidden fees.</span></h2>
-          <p>Pay only for what you ship. Volume discounts kick in automatically.</p>
+          <span class="eyebrow">Why Travomate</span>
+          <h2>Smarter shipping, <span class="grad">built on real journeys</span></h2>
+          <p>You're not paying for warehouses or logistics chains — just the unused space in a trip already happening.</p>
         </div>
-        <div class="plans">
-          <article class="plan reveal">
-            <h3>Express City</h3>
-            <p class="price"><span>$</span>6<small>/ parcel</small></p>
-            <ul>
-              <li>Up to 5kg within the city</li>
-              <li>Same-day delivery</li>
-              <li>Live tracking &amp; photo proof</li>
-              <li>Email support</li>
-            </ul>
-            <a href="#quote" class="btn btn-outline">Choose plan</a>
+        <div class="why-grid">
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Save money</h3>
+            <p>No warehouses. No long logistics chains. Just unused space in a real journey — which is why it costs less.</p>
           </article>
-          <article class="plan plan-featured reveal">
-            <span class="ribbon">Most popular</span>
-            <h3>Cross-Country</h3>
-            <p class="price"><span>$</span>19<small>/ parcel</small></p>
-            <ul>
-              <li>Up to 10kg nationwide</li>
-              <li>Next-day delivery</li>
-              <li>Insurance up to $500</li>
-              <li>Priority support</li>
-            </ul>
-            <a href="#quote" class="btn btn-primary">Choose plan</a>
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20"/><path d="M12 2a15 15 0 0 0 0 20"/></svg>
+            </div>
+            <h3>More flexible</h3>
+            <p>Send parcels on routes and timelines traditional couriers don't cover well. If someone's going there, you can send there.</p>
           </article>
-          <article class="plan reveal">
-            <h3>International</h3>
-            <p class="price"><span>From $</span>49<small>/ parcel</small></p>
-            <ul>
-              <li>Worldwide via verified travelers</li>
-              <li>Customs handled for you</li>
-              <li>Insurance up to $2,000</li>
-              <li>Dedicated dispatcher</li>
-            </ul>
-            <a href="#quote" class="btn btn-outline">Choose plan</a>
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Built on trust</h3>
+            <p>Every user is verified. Browse ratings and delivery history before you choose your traveller — never fly blind.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg>
+            </div>
+            <h3>Secure payments</h3>
+            <p>Funds are held safely in the app and only released after successful delivery. No upfront risk, ever.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z"/></svg>
+            </div>
+            <h3>Insurance available</h3>
+            <p>Add optional coverage at checkout to protect your shipment — peace of mind, on demand.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
+            </div>
+            <h3>Clear &amp; legal</h3>
+            <p>Guided shipping rules keep every delivery aligned with customs and the law. Ship smart, ship right.</p>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section id="track" class="track">
-      <div class="container track-grid">
-        <div class="reveal">
-          <span class="eyebrow">Track</span>
-          <h2>Where's my parcel?</h2>
-          <p>Enter your tracking number to see live status, ETA, and delivery proof.</p>
-        </div>
-        <form class="track-form reveal">
-          <label for="tracking" class="sr-only">Tracking number</label>
-          <input id="tracking" type="text" placeholder="e.g. TM-48201" />
-          <button class="btn btn-primary" type="submit">Track now</button>
-          <p id="track-status" class="track-status" role="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
 
     <section class="testimonials">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Loved by senders</span>
-          <h2>Trusted by businesses and <span class="grad">travelers worldwide</span></h2>
+          <span class="eyebrow">Loved by senders &amp; travellers</span>
+          <h2>Real journeys, <span class="grad">real deliveries</span></h2>
         </div>
         <div class="grid-3">
           <figure class="quote reveal">
             <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>"Travomate cut our last-mile costs by 40% and our customers actually enjoy the tracking experience."</blockquote>
+            <blockquote>"Way cheaper than the courier I usually use, and my parcel got to Lagos a day earlier. The traveller was lovely."</blockquote>
             <figcaption>
               <div class="avatar" aria-hidden="true">AO</div>
-              <div class="who"><strong>Amaka O.</strong><span>Founder, Lagos boutique</span></div>
+              <div class="who"><strong>Amaka O.</strong><span>Sender · Lagos</span></div>
             </figcaption>
           </figure>
           <figure class="quote reveal">
             <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>"I send documents internationally every week. It's the only service that has never lost a parcel."</blockquote>
+            <blockquote>"I travel for work every month. Travomate basically pays for my flights now — and I'm helping people back home."</blockquote>
             <figcaption>
               <div class="avatar" aria-hidden="true">DK</div>
-              <div class="who"><strong>David K.</strong><span>Legal consultant</span></div>
+              <div class="who"><strong>David K.</strong><span>Traveller · London</span></div>
             </figcaption>
           </figure>
           <figure class="quote reveal">
             <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>"Booked, picked up and delivered the same afternoon. The proof of delivery photo sealed the deal."</blockquote>
+            <blockquote>"Couriers don't even cover my route. Travomate matched me with a traveller in two hours. Game changer."</blockquote>
             <figcaption>
               <div class="avatar" aria-hidden="true">SR</div>
-              <div class="who"><strong>Sade R.</strong><span>E-commerce manager</span></div>
+              <div class="who"><strong>Sade R.</strong><span>Sender · Abuja</span></div>
             </figcaption>
           </figure>
         </div>
@@ -303,39 +246,49 @@
         </div>
         <div class="faq-list">
           <details class="faq-item reveal">
-            <summary>How fast is same-day delivery?<span class="faq-icon" aria-hidden="true">+</span></summary>
-            <p>Most city pickups happen within 30 minutes of booking, and arrive at the recipient within 2–4 hours depending on traffic and distance.</p>
+            <summary>How does Travomate Parcels actually work?<span class="faq-icon" aria-hidden="true">+</span></summary>
+            <p>You post your parcel in the app. Verified travellers already heading to your destination send offers. You pick one based on rating, price, and timing, pay securely, and track the delivery — all inside the app.</p>
           </details>
           <details class="faq-item reveal">
-            <summary>Are international parcels insured?<span class="faq-icon" aria-hidden="true">+</span></summary>
-            <p>Yes. Every Travomate parcel is insured up to its declared value, with a default cover of $2,000 on the International plan.</p>
+            <summary>Is it safe to send parcels with strangers?<span class="faq-icon" aria-hidden="true">+</span></summary>
+            <p>Every user is identity-verified, and you can see ratings and delivery history before you accept any offer. Payments stay locked in the app and are only released after successful delivery.</p>
           </details>
           <details class="faq-item reveal">
-            <summary>How do you verify travelers?<span class="faq-icon" aria-hidden="true">+</span></summary>
-            <p>Every traveler completes government-ID verification, a selfie liveness check, and is rated by senders after each delivery.</p>
+            <summary>When does the traveller actually get paid?<span class="faq-icon" aria-hidden="true">+</span></summary>
+            <p>Funds are held securely from the moment you pay. They're released to the traveller only after you confirm the parcel has been delivered.</p>
           </details>
           <details class="faq-item reveal">
-            <summary>Do you support API integration?<span class="faq-icon" aria-hidden="true">+</span></summary>
-            <p>Absolutely. Our REST API and Shopify/Woo plugins let you create shipments, fetch live tracking, and trigger webhooks on every status change.</p>
+            <summary>Is my parcel insured?<span class="faq-icon" aria-hidden="true">+</span></summary>
+            <p>Insurance is optional. You can add coverage at checkout to protect your shipment for extra peace of mind.</p>
           </details>
           <details class="faq-item reveal">
-            <summary>What if my parcel is delayed or lost?<span class="faq-icon" aria-hidden="true">+</span></summary>
-            <p>You'll get proactive notifications, and our 24/7 support team will resolve or refund according to our service-level guarantee.</p>
+            <summary>What about customs and legal stuff?<span class="faq-icon" aria-hidden="true">+</span></summary>
+            <p>The app guides you through shipping rules so every delivery follows customs and legal requirements. Restricted items are flagged before you post.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can I earn money as a traveller?<span class="faq-icon" aria-hidden="true">+</span></summary>
+            <p>Yes. If you're already travelling, list your trip and accept parcels along the way. Turn your unused luggage space into income.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="cta">
+    <section id="download" class="cta">
       <div class="container">
         <div class="cta-inner reveal">
           <div>
-            <h2>Ready to ship smarter?</h2>
-            <p>Create a free account in under a minute and send your first parcel today.</p>
+            <h2>Send smart. Save big.</h2>
+            <p>Download Travomate Parcels and post your first delivery in minutes — or list your next trip and start earning.</p>
           </div>
           <div class="cta-actions">
-            <a href="#quote" class="btn btn-primary">Get started <span class="arrow">→</span></a>
-            <a href="mailto:hello@travomate.com" class="btn btn-ghost">Talk to sales</a>
+            <a href="#" class="app-badge" aria-label="Download on the App Store">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.23-1.18 3.04-.85.91-2.23 1.61-3.39 1.52-.13-1.12.43-2.29 1.18-3.04.86-.86 2.32-1.51 3.39-1.52zM20.5 17.18c-.55 1.27-.81 1.84-1.51 2.96-.99 1.55-2.39 3.49-4.13 3.5-1.55.02-1.95-1.01-4.06-.99-2.11.01-2.55 1.01-4.1.99-1.74-.02-3.07-1.78-4.06-3.34C.36 15.59-.45 9.85 1.7 6.65c1.4-2.07 3.62-3.29 5.71-3.29 2.13 0 3.46 1.16 5.22 1.16 1.7 0 2.74-1.17 5.2-1.17 1.86 0 3.83 1.01 5.23 2.76-4.6 2.52-3.86 9.07-1.06 11.07z"/></svg>
+              <span class="app-badge-copy"><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a href="#" class="app-badge" aria-label="Get it on Google Play">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.5a1.5 1.5 0 0 0-.6 1.2v18.6a1.5 1.5 0 0 0 .6 1.2l10.5-10.5L3.6 1.5zM15.6 13.5l2.7 2.7-12 6.9 9.3-9.6zM20.4 10.8l-2.7-1.5-3 3 3 3 2.7-1.5a1.7 1.7 0 0 0 0-3zM15.6 10.5l-9.3-9.6 12 6.9-2.7 2.7z"/></svg>
+              <span class="app-badge-copy"><small>Get it on</small><strong>Google Play</strong></span>
+            </a>
           </div>
         </div>
       </div>
@@ -355,7 +308,7 @@
           </span>
           <span class="logo-text">Travomate <span>Parcels</span></span>
         </a>
-        <p class="footer-tag">Send Smart. Deliver Fast. The modern way to move parcels — locally and across borders.</p>
+        <p class="footer-tag">Send with travellers heading your way. Faster, cheaper, more flexible — all in one app.</p>
         <div class="socials">
           <a href="#" aria-label="Twitter">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.83l-4.78-6.25L4.8 22H2l7.04-8.04L2 2h6.94l4.32 5.71L18.244 2zm-2.39 18h1.94L8.27 4H6.2l9.654 16z"/></svg>
@@ -369,17 +322,15 @@
         </div>
       </div>
       <div>
-        <h4>Product</h4>
-        <a href="#services">Services</a>
+        <h4>App</h4>
         <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#track">Track</a>
+        <a href="#why">Why Travomate</a>
+        <a href="#download">Download</a>
       </div>
       <div>
         <h4>Company</h4>
         <a href="#">About</a>
         <a href="#">Careers</a>
-        <a href="#contact">Contact</a>
         <a href="#faq">FAQ</a>
       </div>
       <div>
@@ -391,7 +342,7 @@
     </div>
     <div class="container footer-bottom">
       <small>© <span id="year"></span> Travomate Parcels. All rights reserved.</small>
-      <small>Made with care for senders everywhere.</small>
+      <small>Your parcel. Their journey. One smart app.</small>
     </div>
   </footer>
 
