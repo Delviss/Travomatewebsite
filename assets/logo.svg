@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Travomate Parcels logo">
+  <defs>
+    <clipPath id="badgeClip">
+      <rect x="0" y="0" width="200" height="200" rx="36" ry="36"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#badgeClip)">
+    <!-- Orange badge background -->
+    <rect x="0" y="0" width="200" height="200" fill="#CC5C1B"/>
+
+    <!-- Top fins / ears (light grey-white triangles) -->
+    <path d="M62 92 L78 56 L92 92 Z" fill="#E6E2DA"/>
+    <path d="M108 92 L122 56 L138 92 Z" fill="#E6E2DA"/>
+
+    <!-- Whale / parcel body (dark navy ellipse, slightly tilted) -->
+    <g transform="rotate(-10 100 110)">
+      <ellipse cx="100" cy="110" rx="78" ry="30" fill="#0F1F47"/>
+      <!-- Tail flick on the right -->
+      <path d="M170 110 L196 92 L188 112 L196 130 Z" fill="#0F1F47"/>
+    </g>
+
+    <!-- House / parcel mark on the body -->
+    <g transform="rotate(-10 100 110)">
+      <path d="M118 104 L138 90 L158 104 L158 124 L118 124 Z" fill="#E6E2DA"/>
+      <rect x="132" y="110" width="10" height="14" fill="#CC5C1B"/>
+    </g>
+
+    <!-- Eye -->
+    <g transform="rotate(-10 100 110)">
+      <circle cx="58" cy="104" r="6" fill="#FFFFFF"/>
+      <circle cx="58" cy="104" r="2.4" fill="#0F1F47"/>
+    </g>
+  </g>
+</svg>
