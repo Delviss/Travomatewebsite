@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - claude/travomate-landing-page-amfJ9
+      - claude/deploy-redesign-github-Etx87
       - main
   workflow_dispatch:
 
