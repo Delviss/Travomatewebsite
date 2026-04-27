@@ -1,11 +1,11 @@
-# Travomate Parcels — Landing Page
+# Travomate Parcels Landing Page
 
 Marketing landing page for **Travomate Parcels**, a parcel delivery service that
 matches senders with vetted travelers and couriers.
 
 ## Tech
 
-- Plain HTML, CSS, and a small vanilla JS file — zero build step.
+- Plain HTML, CSS, and a small vanilla JS file with zero build step.
 - Inter font via Google Fonts.
 - Responsive layout with a mobile menu, sticky header, and accessible forms.
 
