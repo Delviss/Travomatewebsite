@@ -117,8 +117,13 @@ svg { max-width: 100%; }
   color: var(--text);
   font-weight: 800;
   letter-spacing: -0.01em;
+  line-height: 1;
 }
-.logo-text { color: var(--text); font-size: 1.05rem; }
+.logo-text {
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1;
+}
 .logo-text span {
   background: var(--grad-primary);
   -webkit-background-clip: text;
@@ -586,37 +591,85 @@ section { padding: 100px 0; position: relative; }
 
 /* Footer */
 .site-footer {
-  background: #04081c;
+  position: relative;
+  background:
+    radial-gradient(1100px 360px at 12% 0%, rgba(60, 162, 250, 0.12), transparent 60%),
+    radial-gradient(900px 320px at 88% 0%, rgba(255, 122, 24, 0.08), transparent 60%),
+    #04081c;
   color: var(--muted-strong);
-  padding: 72px 0 28px;
+  padding: 88px 0 32px;
   border-top: 1px solid var(--border);
+  overflow: hidden;
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(60, 162, 250, 0.5), transparent);
+  pointer-events: none;
 }
 .site-footer .logo, .site-footer h4, .site-footer a { color: #fff; }
+.site-footer .logo { gap: 14px; }
+.site-footer .logo-text { font-size: 1.18rem; letter-spacing: -0.01em; }
+.site-footer .logo-mark { width: 44px; height: 44px; border-radius: 13px; }
+.site-footer .logo-mark img { width: 44px; height: 44px; }
 .footer-grid {
   display: grid;
   grid-template-columns: 1.5fr repeat(3, 1fr);
-  gap: 40px;
-  padding-bottom: 40px;
+  gap: 48px;
+  padding-bottom: 48px;
   border-bottom: 1px solid var(--border);
 }
-.footer-grid h4 { margin: 0 0 16px; font-size: 0.95rem; font-weight: 700; }
-.footer-grid a { display: block; padding: 5px 0; color: var(--muted-strong); font-size: 0.92rem; transition: color 0.2s ease; }
-.footer-grid a:hover { color: #fff; }
-.footer-tag { color: var(--muted); margin: 14px 0 18px; font-size: 0.92rem; max-width: 320px; }
-.socials { display: flex; gap: 10px; }
-.socials a {
-  width: 36px; height: 36px;
+.footer-grid > div { min-width: 0; }
+.footer-grid h4 {
+  margin: 0 0 18px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.footer-grid a {
+  display: inline-block;
+  padding: 6px 0;
+  color: var(--muted-strong);
+  font-size: 0.92rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.footer-grid a:hover { color: #fff; transform: translateX(2px); }
+.footer-tag {
+  color: var(--muted);
+  margin: 16px 0 22px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  max-width: 320px;
+}
+.socials { display: flex; gap: 10px; flex-wrap: wrap; }
+.socials a, .socials .social-soon {
+  width: 38px; height: 38px;
   display: grid; place-items: center;
   border: 1px solid var(--border-strong);
   border-radius: 10px;
   color: var(--muted-strong);
-  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
-.socials a:hover { color: #fff; border-color: rgba(255,255,255,0.32); background: var(--surface); }
+.socials a:hover {
+  color: #fff;
+  border-color: rgba(60, 162, 250, 0.55);
+  background: rgba(60, 162, 250, 0.1);
+  transform: translateY(-2px);
+}
+.socials .social-soon {
+  color: var(--muted);
+  border-style: dashed;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
+  align-items: center;
+  padding-top: 28px;
   color: var(--muted);
   flex-wrap: wrap;
   gap: 8px;
@@ -716,6 +769,10 @@ section { padding: 100px 0; position: relative; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
   .footer-grid > div:first-child { grid-column: 1 / -1; }
   .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .site-footer { padding: 64px 0 28px; }
+  .site-footer .logo-mark { width: 40px; height: 40px; }
+  .site-footer .logo-mark img { width: 40px; height: 40px; }
+  .site-footer .logo-text { font-size: 1.08rem; }
 
   .cta { padding: 56px 0 72px; }
   .cta-inner { padding: 32px 24px; border-radius: 24px; }
