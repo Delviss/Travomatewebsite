@@ -628,14 +628,14 @@ section { padding: 100px 0; position: relative; }
   font-weight: 700;
   letter-spacing: 0.02em;
 }
-.footer-grid a {
-  display: inline-block;
+.footer-grid > div > a:not(.logo) {
+  display: block;
   padding: 6px 0;
   color: var(--muted-strong);
   font-size: 0.92rem;
   transition: color 0.2s ease, transform 0.2s ease;
 }
-.footer-grid a:hover { color: #fff; transform: translateX(2px); }
+.footer-grid > div > a:not(.logo):hover { color: #fff; transform: translateX(2px); }
 .footer-tag {
   color: var(--muted);
   margin: 16px 0 22px;
